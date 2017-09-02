@@ -1,0 +1,12 @@
+header#top-nav {
+    height: 72px !important;
+    padding-top: 22px !important;
+}
+
+#flashes {
+    top: 72px !important;
+}
+
+.frame-wrapper {
+    padding-top: 22px !important;
+}

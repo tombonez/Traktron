@@ -1,0 +1,18 @@
+{
+  "name": "trakt",
+  "version": "1.0.0",
+  "description": "A Trakt Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/tombonez/trakt",
+  "author": "Tom Taylor",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "electron-window-state": "^4.1.1"
+  }
+}
