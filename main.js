@@ -27,7 +27,7 @@ function createWindow () {
         y: mainWindowState.y,
         width: mainWindowState.width,
         height: mainWindowState.height,
-        minWidth: 800,
+        minWidth: 768,
         minHeight: 600,
         center: true,
         titleBarStyle: 'hidden',
@@ -46,6 +46,8 @@ function createWindow () {
     });
 
     mainWindowState.manage(mainWindow);
+
+    require(__dirname + '/assets/js/menu');
 }
 
 app.on('ready', createWindow);
@@ -69,16 +71,16 @@ app.on('web-contents-created', (e, contents) => {
             let reqHost = getHost(reqUrl);
             let isExternal = reqHost && reqHost != getHost(contents.getURL());
             if(isExternal) {
-                e.preventDefault();
                 electron.shell.openExternal(reqUrl);
+                e.preventDefault();
             }
         });
         contents.on('new-window', (e, url) => {
-            e.preventDefault();
             electron.shell.openExternal(url);
+            e.preventDefault();
         });
         contents.on('dom-ready', function() {
-            fs.readFile(__dirname+ '/assets/css/inject.css', 'utf-8', function(error, data) {
+            fs.readFile(__dirname + '/assets/css/inject.css', 'utf-8', function(error, data) {
                 contents.insertCSS(data);
             });
         });

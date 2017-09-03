@@ -1,18 +1,20 @@
 {
-  "name": "trakt",
+  "name": "trakt.tv",
+  "productName": "Trakt.tv",
   "version": "1.0.0",
-  "description": "A Trakt Electron application",
+  "description": "A Trakt.tv Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac.icns --app-bundle-id=digital.twisted.trakt --prune=true --out=builds",
+    "build": "npm run build:mac"
   },
   "repository": "https://github.com/tombonez/trakt",
   "author": "Tom Taylor",
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.6.2"
-  },
-  "dependencies": {
+    "electron": "~1.6.2",
+    "electron-packager": "^9.0.1",
     "electron-window-state": "^4.1.1"
   }
 }

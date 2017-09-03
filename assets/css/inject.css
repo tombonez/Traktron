@@ -10,3 +10,7 @@ header#top-nav {
 .frame-wrapper {
     padding-top: 22px !important;
 }
+
+#results-top-wrapper.user-wrapper {
+    padding: 102px 0 0 0 !important;
+}
