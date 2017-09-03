@@ -80,9 +80,15 @@ app.on('web-contents-created', (e, contents) => {
             e.preventDefault();
         });
         contents.on('dom-ready', function() {
-            fs.readFile(__dirname + '/assets/css/inject.css', 'utf-8', function(error, data) {
+            fs.readFile(__dirname + '/assets/css/inject-all.css', 'utf-8', function(error, data) {
                 contents.insertCSS(data);
             });
+            if(process.platform === 'darwin') {
+                fs.readFile(__dirname + '/assets/css/inject-macos.css', 'utf-8', function(error, data) {
+                    contents.insertCSS(data);
+                });
+
+            }
         });
     }
 });
