@@ -1,11 +1,11 @@
-# Trakton
+# Traktron
 A Trakt.tv Electron application
 
-![dependencies](https://david-dm.org/tombonez/Trakton/status.svg) ![devDependencies](https://david-dm.org/tombonez/Trakton/dev-status.svg)
+![dependencies](https://david-dm.org/tombonez/traktron/status.svg) ![devDependencies](https://david-dm.org/tombonez/traktron/dev-status.svg)
 
 ## Screenshot
 
-![Trakton for macOS](https://raw.githubusercontent.com/tombonez/Trakton/master/screenshots/macos.png)
+![Traktron for macOS](https://raw.githubusercontent.com/tombonez/traktron/master/screenshots/macos.png)
 
 ## Downloads
 
@@ -32,4 +32,4 @@ Latest release: Coming Soon
 
 ## License
 
-The code is available under the [MIT License](https://github.com/tombonez/Trakton/blob/master/LICENSE).
+The code is available under the [MIT License](https://github.com/tombonez/traktron/blob/master/LICENSE).
