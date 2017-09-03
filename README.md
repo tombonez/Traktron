@@ -25,4 +25,4 @@ Latest release: [1.0.0](https://github.com/tombonez/Trakton/releases/latest)
 
 ## License
 
-The code is available under [MIT License](https://github.com/tombonez/Trakton/blob/master/LICENSE).
+The code is available under the [MIT License](https://github.com/tombonez/Trakton/blob/master/LICENSE).
