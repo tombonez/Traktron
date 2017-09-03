@@ -1,6 +1,6 @@
 {
-  "name": "trakt.tv",
-  "productName": "Trakt.tv",
+  "name": "Trakton",
+  "productName": "Trakton",
   "version": "1.0.0",
   "description": "A Trakt.tv Electron application",
   "main": "main.js",
@@ -11,7 +11,7 @@
     "build:win32": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/windows.ico --app-bundle-id=digital.twisted.trakt --prune=true --out=builds",
     "build": "npm run build:macos && npm run build:win64 && npm run build:win32"
   },
-  "repository": "https://github.com/tombonez/trakt",
+  "repository": "https://github.com/tombonez/Trakton",
   "author": "Tom Taylor",
   "license": "MIT",
   "devDependencies": {
