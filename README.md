@@ -25,8 +25,8 @@ Latest release: Coming Soon
 
 ## Todo
 
-- Setup Windows installer
-- Add auto updater support
+- [ ] Setup Windows installer
+- [ ] Add auto updater support
 
 ## License
 
