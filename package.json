@@ -1,17 +1,17 @@
 {
-  "name": "Trakton",
-  "productName": "Trakton",
+  "name": "Traktron",
+  "productName": "Traktron",
   "version": "1.0.0",
   "description": "A Trakt.tv Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build:macos": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/macos.icns --app-bundle-id=digital.twisted.trakt --prune=true --out=builds --osx-sign.type=distribution",
-    "build:win64": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=assets/icons/windows.ico --app-bundle-id=digital.twisted.trakt --prune=true --out=builds",
-    "build:win32": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/windows.ico --app-bundle-id=digital.twisted.trakt --prune=true --out=builds",
+    "build:macos": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/macos.icns --app-bundle-id=digital.twisted.traktron --prune=true --out=builds --osx-sign.type=distribution",
+    "build:win64": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=assets/icons/windows.ico --app-bundle-id=digital.twisted.traktron --prune=true --out=builds",
+    "build:win32": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/windows.ico --app-bundle-id=digital.twisted.traktron --prune=true --out=builds",
     "build": "npm run build:macos && npm run build:win64 && npm run build:win32"
   },
-  "repository": "https://github.com/tombonez/Trakton",
+  "repository": "https://github.com/tombonez/traktron",
   "author": "Tom Taylor",
   "license": "MIT",
   "devDependencies": {

@@ -2,10 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Trakt.tv</title>
+        <title>Traktron</title>
     </head>
     <body>
         <div id="draggable" style="position: fixed; top: 0; left: 0; width: 100%; height: 22px; pointer-events: none; -webkit-app-region: drag;"></div>
         <webview id="webview" src="https://trakt.tv/" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></webview>
+        <script src="./assets/js/plugins/keypress-2.1.4.min.js"></script>
+        <script>
+            const webview = document.querySelector('webview')
+            var listener = new window.keypress.Listener();
+            listener.simple_combo('meta left', function() {
+                webview.goBack();
+            });
+            listener.simple_combo('meta right', function() {
+                webview.goForward();
+            });
+        </script>
     </body>
 </html>

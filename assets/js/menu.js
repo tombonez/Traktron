@@ -83,7 +83,7 @@ const template = [
         submenu: [
             {
                 label: 'Report an issue...',
-                click () { require('electron').shell.openExternal('https://github.com/tombonez/trakt/issues'); }
+                click () { require('electron').shell.openExternal('https://github.com/tombonez/traktron/issues'); }
             },
             {
                 label: 'Trakt.tv Help',
