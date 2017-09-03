@@ -25,6 +25,8 @@ Latest release: Coming Soon
 
 ## Todo
 
+- [ ] Add back/forward keyboard support
+- [ ] Add back/forward navigation
 - [ ] Setup Windows installer
 - [ ] Add auto updater support
 
