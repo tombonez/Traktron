@@ -1,7 +1,7 @@
 # Traktron
 A Trakt.tv Electron application
 
-![dependencies](https://david-dm.org/tombonez/traktron/status.svg) ![devDependencies](https://david-dm.org/tombonez/traktron/dev-status.svg)
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg) ![dependencies](https://david-dm.org/tombonez/traktron/status.svg) ![devDependencies](https://david-dm.org/tombonez/traktron/dev-status.svg)
 
 ## Screenshot
 
