@@ -9,7 +9,7 @@ A Trakt.tv Electron application
 
 ## Downloads
 
-Latest release: [1.0.0](https://github.com/tombonez/Trakton/releases/latest)
+Latest release: Coming Soon
 
 ## Development
 
@@ -22,6 +22,11 @@ Latest release: [1.0.0](https://github.com/tombonez/Trakton/releases/latest)
 | `npm run build:macos` | Builds the macOS application       |
 | `npm run build:win64` | Builds the Windows x64 application |
 | `npm run build:win32` | Builds the Windows x86 application |
+
+## Todo
+
+- Setup Windows installer
+- Add auto updater support
 
 ## License
 
