@@ -3,14 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <title>Traktron</title>
+        <style>
+            #draggable {
+                position: fixed;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                display: none;
+                width: 100%;
+                height: 22px;
+                pointer-events: none;
+                -webkit-app-region: drag;
+            }
+            #webview {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
-        <div id="draggable" style="position: fixed; top: 0; left: 0; width: 100%; height: 22px; pointer-events: none; -webkit-app-region: drag;"></div>
-        <webview id="webview" src="https://trakt.tv/" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></webview>
+        <div id="draggable"></div>
+        <webview id="webview" src="https://trakt.tv/"></webview>
+        <script>
+            if(process.platform === 'darwin') {
+                document.querySelector('#draggable').style.display = 'block';
+            }
+        </script>
         <script src="./assets/js/plugins/keypress-2.1.4.min.js"></script>
         <script>
-            const webview = document.querySelector('webview')
-            var listener = new window.keypress.Listener();
+            const webview = document.querySelector('#webview');
+            const listener = new window.keypress.Listener();
             listener.simple_combo('meta left', function() {
                 webview.goBack();
             });

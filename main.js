@@ -87,7 +87,6 @@ app.on('web-contents-created', (e, contents) => {
                 fs.readFile(__dirname + '/assets/css/inject-macos.css', 'utf-8', function(error, data) {
                     contents.insertCSS(data);
                 });
-
             }
         });
     }

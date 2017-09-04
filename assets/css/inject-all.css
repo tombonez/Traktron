@@ -1,7 +1,7 @@
 .turbolinks-progress-bar {
+    z-index: 999999 !important;
     top: auto !important;
     bottom: 0 !important;
     height: 2px !important;
     background-color: #ed1c24 !important;
-    z-index: 999999 !important;
 }
