@@ -1,7 +1,7 @@
 # Traktron
 A Trakt.tv Electron application
 
-![dependencies](https://david-dm.org/tombonez/traktron/status.svg) ![devDependencies](https://david-dm.org/tombonez/traktron/dev-status.svg)
+![dependencies](https://david-dm.org/tombonez/traktron/status.svg) ![devDependencies](https://david-dm.org/tombonez/traktron/dev-status.svg) ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Screenshot
 
@@ -25,7 +25,7 @@ Latest release: Coming Soon
 
 ## Todo
 
-- [ ] Add back/forward keyboard support
+- [x] Add back/forward keyboard support
 - [ ] Add back/forward navigation
 - [ ] Setup Windows installer
 - [ ] Add auto updater support
