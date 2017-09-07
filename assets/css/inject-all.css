@@ -6,8 +6,18 @@
     background-color: #ed1c24 !important;
 }
 
-header#top-nav #header-search #header-arrow-left, header#top-nav #header-search #header-arrow-right {
+header#top-nav #header-search #header-arrow-left,
+header#top-nav #header-search #header-arrow-right {
     float: left;
     cursor: pointer;
-    transition: all .5s;
+}
+
+header#top-nav #header-search #header-arrow-left:hover i,
+header#top-nav #header-search #header-arrow-right:hover i,
+header#top-nav #header-search #header-search-button:hover i {
+    color: #ed1c24;
+}
+
+header#top-nav #header-search #header-search-button.btn-primary:hover i {
+    color: #fff;
 }

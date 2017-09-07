@@ -3,7 +3,8 @@ header#top-nav {
     padding-top: 22px !important;
 }
 
-#flashes, #toast-container {
+#flashes,
+#toast-container {
     top: 72px !important;
 }
 
