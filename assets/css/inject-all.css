@@ -5,3 +5,9 @@
     height: 2px !important;
     background-color: #ed1c24 !important;
 }
+
+header#top-nav #header-search #header-arrow-left, header#top-nav #header-search #header-arrow-right {
+    float: left;
+    cursor: pointer;
+    transition: all .5s;
+}

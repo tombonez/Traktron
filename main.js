@@ -80,6 +80,9 @@ app.on('web-contents-created', (e, contents) => {
             e.preventDefault();
         });
         contents.on('dom-ready', function() {
+            fs.readFile(__dirname + '/assets/js/inject-all.js', 'utf-8', function(error, data) {
+                contents.executeJavaScript(data);
+            });
             fs.readFile(__dirname + '/assets/css/inject-all.css', 'utf-8', function(error, data) {
                 contents.insertCSS(data);
             });
