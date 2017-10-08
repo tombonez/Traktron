@@ -36,9 +36,6 @@
         <script>
             const webview = document.querySelector('#webview');
             const listener = new window.keypress.Listener();
-            listener.simple_combo('backspace', function() {
-                webview.goBack();
-            });
             listener.simple_combo('meta left', function() {
                 webview.goBack();
             });
