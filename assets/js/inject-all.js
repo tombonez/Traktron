@@ -9,4 +9,11 @@ $(document).ready(function(){
     $('#header-arrow-right').on('click', function(){
         history.forward();
     });
+    var listener = new window.keypress.Listener();
+    listener.simple_combo('meta left', function() {
+        history.back();
+    });
+    listener.simple_combo('meta right', function() {
+        history.forward();
+    });
 });

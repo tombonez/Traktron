@@ -84,6 +84,9 @@ app.on('web-contents-created', (e, contents) => {
             e.preventDefault();
         });
         contents.on('dom-ready', function() {
+            fs.readFile(__dirname + '/assets/js/plugins/keypress-2.1.5.min.js', 'utf-8', function(error, data) {
+                contents.executeJavaScript(data);
+            });
             fs.readFile(__dirname + '/assets/js/inject-all.js', 'utf-8', function(error, data) {
                 contents.executeJavaScript(data);
             });
