@@ -21,7 +21,3 @@ header#top-nav #header-search #header-search-button:hover i {
 header#top-nav #header-search #header-search-button.btn-primary:hover i {
     color: #fff;
 }
-
-header#top-nav #header-shop {
-    display: none;
-}
