@@ -32,7 +32,11 @@ function createWindow () {
         center: true,
         titleBarStyle: 'hidden',
         autoHideMenuBar: true,
-        backgroundColor: '#000'
+        backgroundColor: '#000',
+        webPreferences: {
+            webviewTag: true,
+            nodeIntegration: true
+        }
     });
 
     mainWindow.loadURL(url.format({
