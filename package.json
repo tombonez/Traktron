@@ -21,6 +21,6 @@
   "dependencies": {
     "electron-osx-sign": "^0.4.14",
     "electron-window-state": "^5.0.3",
-    "npm": "^6.12.0"
+    "npm": "^6.12.1"
   }
 }
