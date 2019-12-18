@@ -15,7 +15,7 @@
   "author": "Tom Taylor",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^7.1.5",
+    "electron": "^7.1.6",
     "electron-packager": "^14.1.1"
   },
   "dependencies": {
